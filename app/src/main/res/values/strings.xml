@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Gramincare</string>
+<!--    <string name="profile">Profile</string>-->
+<!--    <string name="friends_list">FriendsList</string>-->
 </resources>

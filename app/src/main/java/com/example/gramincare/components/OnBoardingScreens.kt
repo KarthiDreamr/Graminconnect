@@ -33,14 +33,18 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import kotlinx.coroutines.launch
 
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun OnBoardPage(onboardPageDetails: List<OnboardPage>) {
+fun OnBoardPage(
+    onboardPageDetails: List<OnboardPage>,
+    finishOnboarding: () -> Unit,
+    navController: NavController
+) {
 
-    // Display 3 pages
     val pageCount = 3
     val pagerState = rememberPagerState { onboardPageDetails.size }
     val screenIndex = rememberSaveable {
@@ -61,12 +65,8 @@ fun OnBoardPage(onboardPageDetails: List<OnboardPage>) {
             TextButton(
                 modifier = Modifier.align(Alignment.End),
                 onClick = {
-                    if (screenIndex.value < 3) {
-                        screenIndex.value = screenIndex.value + 1
-                    } else {
-
-                    }
-
+                    finishOnboarding()
+                    navController.navigate("welcomePage")
                 }) {
                 Text(text = "Skip")
             }
@@ -113,7 +113,8 @@ fun OnBoardPage(onboardPageDetails: List<OnboardPage>) {
                 verticalAlignment = Alignment.Bottom
             ) {
                 repeat(pageCount) { iteration ->
-                    val color = if (pagerState.currentPage == iteration) Color.DarkGray else Color.LightGray
+                    val color =
+                        if (pagerState.currentPage == iteration) Color.DarkGray else Color.LightGray
                     Box(
                         modifier = Modifier
                             .padding(2.dp)
@@ -124,15 +125,21 @@ fun OnBoardPage(onboardPageDetails: List<OnboardPage>) {
                     )
                 }
             }
-    
-    	    Spacer(modifier = Modifier.size(10.dp))
+
+            Spacer(modifier = Modifier.size(10.dp))
 
             val couroutineScope = rememberCoroutineScope()
             Button(
                 onClick = {
-                          couroutineScope.launch {
-                              pagerState.scrollToPage(pageIndex + 1)
-                          }
+                    if (pageIndex == 2) {
+                        finishOnboarding()
+                        navController.navigate("welcomePage")
+                    } else {
+                        couroutineScope.launch {
+                            pagerState.scrollToPage(pageIndex + 1)
+                        }
+                    }
+
                 },
                 modifier = Modifier
                     .fillMaxWidth()
@@ -140,19 +147,27 @@ fun OnBoardPage(onboardPageDetails: List<OnboardPage>) {
                 shape = RoundedCornerShape(10.dp),
 
                 ) {
-                
-                Text(
-                    modifier = Modifier.padding(vertical = 6.dp),
-                    text = "Next",
-                    fontSize = 16.sp,
-                )
+
+                if (pageIndex == 2) {
+                    Text(
+                        modifier = Modifier.padding(vertical = 6.dp),
+                        text = "Get Started",
+                        fontSize = 16.sp,
+                    )
+                } else {
+                    Text(
+                        modifier = Modifier.padding(vertical = 6.dp),
+                        text = "Next",
+                        fontSize = 16.sp,
+                    )
+                }
+
             }
 
             Spacer(modifier = Modifier.size(10.dp))
 
         }
     }//HorizontalPager
-
 
 
 }

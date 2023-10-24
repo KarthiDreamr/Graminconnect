@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "343413125949",
+    "project_id": "esanjeevani-version3",
+    "storage_bucket": "esanjeevani-version3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343413125949:android:78ff3789df0ac875344b54",
+        "android_client_info": {
+          "package_name": "com.example.esanjeevani_v3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaCTDE5g_UqGporUaPa4qI0jfGmJaZp3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343413125949:android:222aeb74f0392ce7344b54",
+        "android_client_info": {
+          "package_name": "com.example.gramincare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaCTDE5g_UqGporUaPa4qI0jfGmJaZp3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

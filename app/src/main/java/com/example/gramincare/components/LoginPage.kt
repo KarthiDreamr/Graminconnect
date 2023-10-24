@@ -23,10 +23,11 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.example.gramincare.R
 
 @Composable
-fun LoginPage(){
+fun LoginPage(navController: NavController,login : () -> Unit){
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
@@ -54,7 +55,10 @@ fun LoginPage(){
                 Text("Resend OTP")
             }
             Spacer(modifier = Modifier.size(10.dp))
-            Button(onClick = { /*TODO*/ }) {
+            Button(onClick = {
+                login()
+                navController.navigate("homePage")
+            }) {
                 Text("Login")
             }
         }
@@ -63,6 +67,7 @@ fun LoginPage(){
             Button(onClick = { otpTriggered = true }) {
                 Text("Send OTP")
             }
+            Spacer(modifier = Modifier.size(20.dp))
         }
 
     }
