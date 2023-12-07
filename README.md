@@ -1,6 +1,6 @@
 # Graminconnect 🚀
 
-Graminconnect is a full-stack software application designed to address the healthcare challenges faced by rural communities in India 🎉. It provides a centralized platform for ASHA workers to manage medicine delivery orders 💊, track pharmacy locations 📍, attend emergency calls 🚨, and provide first aid assistance 🩹. Graminconnect also facilitates AI-assisted telemedicine 🧠, connecting patients with expert doctors 👨‍⚕️👩‍⚕️ via the e-sanjeevani app. The application utilizes Firebase Cloud Firestore 🔥🔥🔥 for data storage, Firebase Auth with OTP 🔐 for user authentication, and Bing Map API 🗺️ for location tracking.
+Graminconnect is a full-stack software application designed to address the healthcare challenges faced by rural communities in India 🎉. It provides a centralized platform for ASHA workers to manage medicine delivery orders 💊, track pharmacy locations 📍, attend emergency calls 🚨, and provide first aid assistance 🩹. Graminconnect also facilitates AI-assisted telemedicine 🧠, connecting patients with expert doctors 👨‍⚕️👩‍⚕️ via the e-sanjeevani app. The application utilizes Firebase Cloud Firestore for data storage, Firebase Auth with OTP 🔐 for user authentication, and Bing Map API 🗺️ for location tracking.
 
 ## Features 🚀
 
@@ -34,7 +34,7 @@ Graminconnect is a full-stack software application designed to address the healt
 * **Kotlin:** Programming language for Android development 💻
 * **Jetpack Compose:** Modern toolkit for building native UI with less code 🎨
 * **WebView:** Android component for displaying web content, used for integrating Bing Map 🌐
-* **Firebase Cloud Firestore:** NoSQL database for storing user data, medicine orders, patient information, pharmacy locations, and emergency call details. 🔥🔥🔥
+* **Firebase Cloud Firestore:** NoSQL database for storing user data, medicine orders, patient information, pharmacy locations, and emergency call details. 🔥
 * **Firebase Auth with OTP:** Secure user authentication using one-time passwords (OTPs) 🔐
 * **Bing Maps API:** Enables real-time tracking of ASHA worker locations and pharmacy locations on a map 🗺️
 
@@ -86,6 +86,6 @@ Once the Graminconnect application is installed and running, you can access its 
 
 If you are interested in contributing to the Graminconnect project, please follow the guidelines in the CONTRIBUTING.md file.
 
-## 📜 License 📄
+## License 📜 
 
 This project is licensed under the GNU General Public License (GPL). The GPL is a strong copyleft license that requires improvements to be shared back with the community. For more information, see the [LICENSE](LICENSE) file.
