@@ -86,6 +86,6 @@ Once the Graminconnect application is installed and running, you can access its 
 
 If you are interested in contributing to the Graminconnect project, please follow the guidelines in the CONTRIBUTING.md file.
 
-## License 📑
+## 📜 License 📄
 
-Graminconnect is licensed under the MIT License. 
+This project is licensed under the GNU General Public License (GPL). The GPL is a strong copyleft license that requires improvements to be shared back with the community. For more information, see the [LICENSE](LICENSE) file.
