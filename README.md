@@ -2,6 +2,10 @@
 
 Graminconnect is a full-stack software application designed to address the healthcare challenges faced by rural communities in India 🎉. It provides a centralized platform for ASHA workers to manage medicine delivery orders 💊, track pharmacy locations 📍, attend emergency calls 🚨, and provide first aid assistance 🩹. Graminconnect also facilitates AI-assisted telemedicine 🧠, connecting patients with expert doctors 👨‍⚕️👩‍⚕️ via the e-sanjeevani app. The application utilizes Firebase Cloud Firestore for data storage, Firebase Auth with OTP 🔐 for user authentication, and Bing Map API 🗺️ for location tracking.
 
+## Screenshots
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/qzsBzDRJM-M)](https://youtu.be/qzsBzDRJM-M)
+
 ## Features 🚀
 
 * **Medicine Delivery Management:** 📦
