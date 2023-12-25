@@ -80,7 +80,8 @@ Once the Graminconnect application is installed and running, you can access its 
 
 3. See the Graminconnect kiosk use case diagram: [https://bit.ly/kiosk-usecasediagram](https://bit.ly/kiosk-usecasediagram)
 
-4. Watch a demo of the Graminconnect application on YouTube: [https://youtu.be/ldhaJtE0nu0](https://youtu.be/ldhaJtE0nu0)
+4. Watch a demo of the Graminconnect application on YouTube: [https://youtu.be/qzsBzDRJM-M](https://youtu.be/qzsBzDRJM-M)
+
 
 ## Contributing 🤝
 
