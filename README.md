@@ -50,8 +50,8 @@ To install and run the Graminconnect Android application, follow these steps:
 
 1. Clone the Graminconnect repository from GitHub:
 
-  ```bash
-  git clone https://github.com/karthidreamr/graminconnect.git
+  ```
+  git clone https://github.com/karthidreamr/graminconnect.git
   ```
 
 2. Open the Graminconnect project in Android Studio.
